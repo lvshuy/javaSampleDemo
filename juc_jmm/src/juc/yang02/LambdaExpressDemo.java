@@ -4,15 +4,15 @@ package juc.yang02;
 interface Foo {
 
 //    public void sayHello();
-    public int add(int x, int y);
+    int add(int x, int y);
 
     //可定义多个
-    public default int mul(int x, int y){
+    default int mul(int x, int y){
         return x*y;
     }
 
     //可以定义多个
-    public static int div(int x, int y){
+    static int div(int x, int y){
         return x/y;
     }
 }
